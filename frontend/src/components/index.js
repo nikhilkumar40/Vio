@@ -4,6 +4,7 @@ import LoginButton from "./LoginButton";
 import Searchbar from "./Searchbar";
 import Logo from "./Logo";
 import Footer from "./footer/Footer";
+import MainLayout from "./MainLayout";
 
 export
 {
@@ -12,5 +13,6 @@ export
     LoginButton,
     Logo,
     Searchbar,
-    Footer
+    Footer,
+    MainLayout
 }
