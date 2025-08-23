@@ -11,7 +11,7 @@ function Navbar() {
         <Searchbar />
       </div>
       <div>
-        <LoginButton />
+        <LoginButton children="Login" classname="bg-blue-500 px-4 py-1" />
       </div>
     </div>
   )

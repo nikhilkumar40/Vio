@@ -2,5 +2,6 @@ import axios from "axios"
 
 
 export const movieApi = async ()=>{
-    return await axios.get('url')
+    let movies =  await axios.get('http://localhost:8080/public/moviesList')
+    return movies.data;
 }

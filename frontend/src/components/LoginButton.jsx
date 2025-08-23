@@ -1,8 +1,14 @@
 import React from 'react'
 
-function LoginButton() {
+function LoginButton({
+  children,
+  classname = '',
+
+}) {
   return (
-    <div>LoginButton</div>
+    <div>
+      <button className={`${classname} text-shadow-amber-50 font-medium rounded-l`}>{children}</button>
+    </div>
   )
 }
 
