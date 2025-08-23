@@ -13,12 +13,12 @@ function Searchbar() {
 
 
   return (
-    <div>
-      <input
+    <div className='border-2 border-[#a3a3a3] bg-[#f3f3f3] rounded-xl'>
+      <input className='px-5 w-2xl h-9'
         type='text'
         placeholder='Search anything'
-        value={searchItem} o
-        nChange={(e) => setSearchItem(e.target.value)} />
+        value={searchItem} 
+        onChange={(e) => setSearchItem(e.target.value)} />
     </div>
   )
 }

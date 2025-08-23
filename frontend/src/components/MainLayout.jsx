@@ -1,10 +1,9 @@
-import React from 'react'
 import {Footer, Navbar} from './index'
 import HomePage from '../pages/HomePage'
 
 function MainLayout() {
   return (
-    <div>
+    <div className='mt-5'>
         <Navbar />
         <HomePage />
         <Footer />

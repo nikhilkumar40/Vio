@@ -1,8 +1,10 @@
-import React from 'react'
+import LogoImage from '../assets/images/logoV.png'
 
 function Logo() {
   return (
-    <div>Logo</div>
+    <div>
+      <img className='w-20 h-12' src={LogoImage} />
+    </div>
   )
 }
 

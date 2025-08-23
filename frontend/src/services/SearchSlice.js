@@ -1,14 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { act } from "react"
 
 
 
 const initialState = {
     searchItems: [{
         id: 1,
-        title: '',
-        genre: ''
-    }]
+        title: 'FightClub',
+        genre: 'motivation'
+    },]
 }
 
 const searchSlice = createSlice({
@@ -16,13 +15,10 @@ const searchSlice = createSlice({
     initialState,
     reducers: {
         searchVideo: (state, action) => {
-            return state.searchItems
-                .map
-                (item => item.title
-                    .toLowerCase()
-                    .search(action.title.toLowerCase()) > 0
-                    ? item
-                    : null
+            state.searchItems = state.searchItems
+                .filter(
+                    item => item.title.toLowerCase()
+                        .includes(action.payload.toLowerCase())
                 )
         },
 
