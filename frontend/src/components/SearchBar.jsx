@@ -13,7 +13,7 @@ function Searchbar() {
 
 
   return (
-    <div className='border-2 border-[#a3a3a3] bg-[#f3f3f3] rounded-xl'>
+    <div className='border-2 border-[#ACACAC] bg-[#f3f3f3] rounded-xl'>
       <input className='px-5 w-2xl h-9'
         type='text'
         placeholder='Search anything'
